@@ -17,7 +17,9 @@
 # under the License.
 #
 
-name: custom_sink_connector
-description: Example of a sink connector for Pulsar I/O
-sinkClass: com.riferrei.pulsar.sink.custom.CustomSinkConnector
-sinkConfigClass: com.riferrei.pulsar.sink.custom.CustomSinkConfig
+name: custom_sink_connector_elastic_search
+description: Example of a sink connector for Pulsar I/O - Writes data into Elastic Search
+sinkClass: com.ramses.pulsar.sink.elk.CustomSinkConnector
+sinkConfigClass: com.ramses.pulsar.sink.elk.CustomSinkConfig
+
+
