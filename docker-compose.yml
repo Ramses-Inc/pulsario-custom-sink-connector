@@ -4,11 +4,11 @@ services:
 
   pulsar-server:
     command: bin/pulsar standalone
-    image: apachepulsar/pulsar-all:2.8.1
+    image: apachepulsar/pulsar-all:2.10.1
     container_name: pulsar-server
     hostname: pulsar-server
     volumes:
-      - ./target/custom-sink-connector-0.0.1.nar:/pulsar/connectors/custom-sink-connector-0.0.1.nar
+      - ./target/custom-sink-connector-2.10.1.nar:/pulsar/connectors/custom-sink-connector-2.10.1.nar
     ports:
     - 8080:8080
     - 6650:6650
